@@ -12,26 +12,45 @@ In this dataset and task, the goal is to explore the following research question
     What are the risk factors most predictive of mortality by heart failure?
 
 In this task, a few datasets are provided:
+
 1. base_metrics_patient.csv - the base DF contains the main metrics measured per each patient. These are:
-
-    uniqueID - patient ID
-    smoking - If the patient smokes or not (boolean)
-    ejection_fraction - Percentage of blood leaving the heart at each contraction (%)
-    serum_sodium - Level of serum sodium in the blood (mEq/L)
-    platelets - Platelets in the blood (kiloplatelets/mL)
-    creatinine_phosphokinase - Level of the CPK enzyme in the blood (mcg/L)
-    diabetes - If the patient has diabetes (boolean)
-    serum_creatinine - Level of serum creatinine in the blood (mg/dL)
-
-    blood_metrics_df.csv - an additional dataset containing some more metrics about each patient. Specifically, it contains:
+        
         uniqueID - patient ID
+        
+        smoking - If the patient smokes or not (boolean)
+        
+        ejection_fraction - Percentage of blood leaving the heart at each contraction (%)
+        
+        serum_sodium - Level of serum sodium in the blood (mEq/L)
+        
+        platelets - Platelets in the blood (kiloplatelets/mL)
+        
+        creatinine_phosphokinase - Level of the CPK enzyme in the blood (mcg/L)
+        
+        diabetes - If the patient has diabetes (boolean)
+        
+        serum_creatinine - Level of serum creatinine in the blood (mg/dL)
+        
+2. blood_metrics_df.csv - an additional dataset containing some more metrics about each patient. Specifically, it contains:
+        
+        uniqueID - patient ID
+        
         anaemia - Decrease of red blood cells or hemoglobin (boolean)
+        
         high_blood_pressure - If the patient has hypertension (boolean)
-    demographic_data.csv - some extra data about the patient’s demographics, specifically:
+
+3. demographic_data.csv - some extra data about the patient’s demographics, specifically:
+
         uniqueID - patient ID
+        
         age - patient’s age
+        
         sex - (male - 1, female - 0)
-    follow_up_df.csv - a dataset containing details about a follow-up check with that patient. It contains:
+        
+4. follow_up_df.csv - a dataset containing details about a follow-up check with that patient. It contains:
+        
         uniqueID - patient ID
+        
         time - time passed (in days) between the measurement date (see dataset #1) until that “follow-up” date
+        
         DEATH_EVENT - If the patient deceased during the follow-up period (boolean)
